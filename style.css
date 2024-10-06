@@ -1,0 +1,38 @@
+body{
+  background-image: url(/images/bg.jpeg);
+  background-repeat:no repeat;
+  background-position: center;
+
+}
+
+
+.map area:hover {
+    cursor: pointer;
+    background-color: red;
+  }
+.img{
+  size:50%;
+  position: relative;
+
+}
+/* Style the tooltip */
+.tooltip {
+  position: absolute;
+  display: none;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(129, 196, 235, 0.5);
+}
+
+/* Style the location icon */
+.location-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Show the tooltip on hover */
+.map area:hover + .tooltip {
+  display: block;
+}

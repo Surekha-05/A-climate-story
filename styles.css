@@ -1,0 +1,51 @@
+
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+
+.earth-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.earth {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-image: url('/images/Earth.jpg');
+    background-size: cover;
+    animation: spin 60s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.earth-container .sidebar-menu1{
+ 
+ margin-left: 0;
+}
+
+a:link, a:visited {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color:rgb(17, 222, 164);
+    color: black;
+  }
